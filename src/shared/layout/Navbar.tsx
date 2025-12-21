@@ -47,7 +47,7 @@ const Navbar: React.FC<NavbarProps> = ({ favoritesCount }) => {
 				<Link to="/" className="flex items-center gap-2 group">
 					<Logo />
 					<span
-						className={`text-xl font-bold tracking-tight ${isScrolled || location.pathname !== "/" ? "text-slate-900" : "text-slate-900 lg:text-white"}`}>
+						className={`text-xl font-bold tracking-tight ${isScrolled || location.pathname !== "/" ? "text-slate-900" : "text-white lg:text-white"}`}>
 						{APP_NAME}
 					</span>
 				</Link>
@@ -94,7 +94,7 @@ const Navbar: React.FC<NavbarProps> = ({ favoritesCount }) => {
 					className={`lg:hidden p-2 ${
 						isScrolled || location.pathname !== "/"
 							? "text-slate-800"
-							: "text-slate-800 lg:text-white"
+							: "text-white lg:text-white"
 					}`}
 					onClick={() => setMobileMenuOpen(!mobileMenuOpen)}>
 					{mobileMenuOpen ? <X size={24} /> : <Menu size={24} />}

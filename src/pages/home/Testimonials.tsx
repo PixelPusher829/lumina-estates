@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router";
 import { Quote } from "lucide-react";
-import { TESTIMONIALS } from "@/shared/data/constants"; // Adjusted path
+import { TESTIMONIALS } from "@/shared/data/testimonials"; // Adjusted path
 
 const Testimonials: React.FC = () => {
 	return (

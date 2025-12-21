@@ -1,9 +1,9 @@
 import React from "react";
-import Hero from "@/shared/layout/Hero"; // Existing component
+import Hero from "@/pages/home/Hero"; // Existing component
 
 import Services from "./Services";
 import FeaturedProperties from "./FeaturedProperties";
-import Neighborhoods from "./Neighborhoods";
+import Neighbourhoods from "./Neighbourhoods";
 import Testimonials from "./Testimonials";
 import Cta from "./Cta";
 
@@ -21,7 +21,7 @@ const Home: React.FC<HomeProps> = ({ favorites, toggleFavorite }) => {
 				favorites={favorites}
 				onToggleFavorite={toggleFavorite}
 			/>
-			<Neighborhoods />
+			<Neighbourhoods />
 			<Testimonials />
 			<Cta />
 		</div>

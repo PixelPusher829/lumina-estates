@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Search, MapPin } from "lucide-react";
 import { useNavigate } from "react-router";
+import hero from "@/shared/images/home/hero.webp";
 
 const Hero: React.FC = () => {
 	const [query, setQuery] = useState("");
@@ -25,7 +26,7 @@ const Hero: React.FC = () => {
 			{/* Background Image */}
 			<div className="absolute inset-0 z-0">
 				<img
-					src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&q=80&w=2000"
+					src={hero}
 					alt="Modern Architecture"
 					className="w-full h-full object-cover object-center"
 				/>

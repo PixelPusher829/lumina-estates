@@ -1,5 +1,7 @@
 import React from 'react';
 import { ArrowRight, TrendingUp } from 'lucide-react';
+import investmentImg from '@/shared/images/services/investment.webp';
+
 
 const Investment: React.FC = () => {
   return (
@@ -25,9 +27,9 @@ const Investment: React.FC = () => {
             <div className="lg:w-1/2 relative">
                <div className="relative z-10 w-4/5 mr-auto">
                  <img 
-                   src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80&w=800" 
+                   src={investmentImg} 
                    alt="Skyscraper" 
-                   className="rounded-[2.5rem] shadow-2xl w-full object-cover aspect-[3/4]"
+                   className="rounded-[2.5rem] shadow-2xl w-full object-cover aspect-3/4"
                  />
                </div>
                {/* Floating Glass Card */}

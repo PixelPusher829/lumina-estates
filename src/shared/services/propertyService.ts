@@ -1,5 +1,5 @@
 import { Property } from "@/shared/types/types";
-import { YAML_DATA_SOURCE } from "@/shared/data/constants";
+import { YAML_DATA_SOURCE } from "@/shared/data/properties";
 import yaml from "js-yaml";
 
 // In a real app, this would fetch from an API endpoint serving the YAML file.

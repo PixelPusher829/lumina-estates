@@ -1,5 +1,8 @@
 import React from 'react';
 import { Home } from 'lucide-react';
+import residential1 from '@/shared/images/services/residential-1.webp';
+import residential2 from '@/shared/images/services/residential-2.webp';
+
 
 const Residential: React.FC = () => {
   return (
@@ -31,15 +34,15 @@ const Residential: React.FC = () => {
             <div className="lg:w-1/2 relative">
                <div className="relative z-10 w-4/5 ml-auto">
                  <img 
-                   src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&q=80&w=800" 
+                   src={residential1}
                    alt="Modern Living Room" 
-                   className="rounded-[2.5rem] shadow-2xl w-full object-cover aspect-[4/5]"
+                   className="rounded-[2.5rem] shadow-2xl w-full object-cover aspect-4/5"
                  />
                </div>
                {/* Floating Overlay Image */}
                <div className="absolute -bottom-6 -left-4 w-1/2 z-20">
                   <img 
-                    src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?auto=format&fit=crop&q=80&w=600" 
+                    src={residential2}
                     alt="Keys" 
                     className="rounded-3xl shadow-xl border-8 border-white w-full object-cover aspect-square"
                   />
