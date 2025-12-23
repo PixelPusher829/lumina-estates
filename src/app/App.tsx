@@ -10,8 +10,8 @@ import {
 	Legal,
 	Help,
 	FAQ,
+	Agents,
 } from "@/pages";
-import Agents from "@/features/agents";
 import Navbar from "@/shared/layout/Navbar";
 import Footer from "@/shared/layout/Footer";
 

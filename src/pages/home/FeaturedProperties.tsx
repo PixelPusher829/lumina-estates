@@ -9,7 +9,7 @@ interface FeaturedPropertiesSectionProps {
 	onToggleFavorite: (id: string) => void;
 }
 
-const FeaturedProperties: React.FC<FeaturedPropertiesProps> = ({
+const FeaturedProperties: React.FC = ({
 	favorites,
 	onToggleFavorite,
 }) => {
@@ -44,7 +44,7 @@ const FeaturedProperties: React.FC<FeaturedPropertiesProps> = ({
 						<h2 className="text-3xl font-bold text-slate-900 mb-4">
 							Discover Your Perfect Home
 						</h2>
-						<p className="text-slate-500 max-w-lg">
+						<p className="text-slate-500 text-lg max-w-lg">
 							Browse our handpicked selection of exclusive properties available
 							for sale and rent.
 						</p>
@@ -57,15 +57,15 @@ const FeaturedProperties: React.FC<FeaturedPropertiesProps> = ({
 				</div>
 
 				{loading ? (
-					<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+					<div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
 						{[1, 2, 3].map((i) => (
 							<div
 								key={i}
-								className="h-[500px] bg-slate-200 rounded-3xl animate-pulse"></div>
+								className="h-30 bg-slate-200 rounded-3xl animate-pulse"></div>
 						))}
 					</div>
 				) : (
-					<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+					<div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
 						{properties.map((prop) => (
 							<PropertyCard
 								key={prop.id}

@@ -10,7 +10,7 @@ const Neighbourhoods: React.FC = () => {
 					<h2 className="text-3xl font-bold text-slate-900 mb-4">
 						Explore Popular Locations
 					</h2>
-					<p className="text-slate-500">
+					<p className="text-slate-500 text-lg">
 						From bustling downtowns to serene lakeside retreats, find the
 						neighborhood that fits your lifestyle.
 					</p>

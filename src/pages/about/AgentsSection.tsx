@@ -1,33 +1,9 @@
 import React, { useEffect, useState } from "react";
 import { Phone, Mail, MapPin } from "lucide-react";
-import { propertyService } from "@/shared/services/propertyService"; // Adjusted path
-import { Agent } from "@/shared/types/types"; // Adjusted path
+import { AGENTS as agents } from "@/shared/data/agents";
 import { Link } from "react-router";
 
 const AgentsSection: React.FC = () => {
-	const [agents, setAgents] = useState<Agent[]>([]);
-	const [loading, setLoading] = useState(true);
-
-	useEffect(() => {
-		const loadAgents = async () => {
-			try {
-				const properties = await propertyService.getAllProperties();
-				// Extract unique agents from properties
-				const uniqueAgentsMap = new Map<string, Agent>();
-				properties.forEach((p) => {
-					if (!uniqueAgentsMap.has(p.agent.name)) {
-						uniqueAgentsMap.set(p.agent.name, p.agent);
-					}
-				});
-				setAgents(Array.from(uniqueAgentsMap.values()));
-			} catch (error) {
-				console.error("Failed to load agents", error);
-			} finally {
-				setLoading(false);
-			}
-		};
-		loadAgents();
-	}, []);
 
 	return (
 		<div className="container mx-auto px-6">
@@ -41,15 +17,6 @@ const AgentsSection: React.FC = () => {
 				</p>
 			</div>
 
-			{loading ? (
-				<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-					{[1, 2, 3].map((i) => (
-						<div
-							key={i}
-							className="h-96 bg-slate-200 rounded-3xl animate-pulse"></div>
-					))}
-				</div>
-			) : (
 				<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
 					{agents.map((agent, idx) => (
 						<div
@@ -95,7 +62,6 @@ const AgentsSection: React.FC = () => {
 						</div>
 					))}
 				</div>
-			)}
 		</div>
 	);
 };

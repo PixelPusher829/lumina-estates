@@ -6,4 +6,5 @@ export { default as Services } from "./services";
 export { default as Legal } from "./support/legal";
 export { default as Help } from "./support/help";
 export { default as FAQ } from "./support/faq";
+export { default as Agents } from "./agents";
 export { default as PropertyDetails } from "./featured/property-details";

@@ -30,7 +30,7 @@ const Hero: React.FC = () => {
 					alt="Modern Architecture"
 					className="w-full h-full object-cover object-center"
 				/>
-				<div className="absolute inset-0 bg-gradient-to-r from-slate-900/70 to-slate-900/10"></div>
+				<div className="absolute inset-0 bg-linear-to-r from-slate-900/80 to-slate-900/30"></div>
 			</div>
 
 			<div className="container relative z-10 mx-auto px-6">

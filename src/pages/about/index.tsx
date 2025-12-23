@@ -3,6 +3,7 @@ import Hero from "./Hero";
 import ImageGrid from "./ImageGrid";
 import Mission from "./Mission";
 import AgentsSection from "./AgentsSection";
+import Agents from "@/features/agents-section";
 
 const About: React.FC = () => {
 	return (
@@ -10,7 +11,7 @@ const About: React.FC = () => {
 			<Hero />
 			<ImageGrid />
 			<Mission />
-			<AgentsSection />
+			<Agents />
 		</div>
 	);
 };

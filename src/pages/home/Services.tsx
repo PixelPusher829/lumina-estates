@@ -9,7 +9,7 @@ const Services: React.FC = () => {
 					<h2 className="text-3xl font-bold text-slate-900 mb-4">
 						Why Choose Lumina
 					</h2>
-					<p className="text-slate-500">
+					<p className="text-slate-500 text-lg">
 						Enhance your property listings with our premium tools and expert
 						guidance. We make real estate simple.
 					</p>
