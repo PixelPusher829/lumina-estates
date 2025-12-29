@@ -1,6 +1,7 @@
-import React, { useState, useEffect } from "react";
+import type React from "react";
+import { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router";
-import { Building2, Heart, Menu, X, Phone } from "lucide-react";
+import { Heart, Menu, X, Phone } from "lucide-react";
 import { APP_NAME } from "@/shared/data/constants";
 import Logo from "./Logo";
 
@@ -25,7 +26,7 @@ const Navbar: React.FC<NavbarProps> = ({ favoritesCount }) => {
 	useEffect(() => {
 		window.scrollTo(0, 0);
 		setMobileMenuOpen(false);
-	}, [location]);
+	}, []);
 
 	const navLinks = [
 		{ name: "Home", path: "/" },
@@ -41,13 +42,15 @@ const Navbar: React.FC<NavbarProps> = ({ favoritesCount }) => {
 				isScrolled
 					? "bg-white/90 backdrop-blur-md shadow-sm py-4"
 					: "bg-transparent py-6"
-			}`}>
+			}`}
+		>
 			<div className="container mx-auto px-6 flex items-center justify-between">
 				{/* Logo */}
 				<Link to="/" className="flex items-center gap-2 group">
 					<Logo />
 					<span
-						className={`text-xl font-bold tracking-tight ${isScrolled || location.pathname !== "/" ? "text-slate-900" : "text-white lg:text-white"}`}>
+						className={`text-xl font-bold tracking-tight ${isScrolled || location.pathname !== "/" ? "text-slate-900" : "text-white lg:text-white"}`}
+					>
 						{APP_NAME}
 					</span>
 				</Link>
@@ -62,7 +65,8 @@ const Navbar: React.FC<NavbarProps> = ({ favoritesCount }) => {
 								isScrolled || location.pathname !== "/"
 									? "text-slate-600 hover:text-primary-700"
 									: "text-slate-200 hover:text-white"
-							}`}>
+							}`}
+						>
 							{link.name}
 						</Link>
 					))}
@@ -79,7 +83,8 @@ const Navbar: React.FC<NavbarProps> = ({ favoritesCount }) => {
 							isScrolled || location.pathname !== "/"
 								? "text-slate-600 hover:text-rose-500"
 								: "text-white/80 hover:text-rose-500"
-						}`}>
+						}`}
+					>
 						<Heart size={24} />
 						{favoritesCount > 0 && (
 							<span className="absolute top-0 right-0 w-4 h-4 bg-rose-500 text-white text-[10px] flex items-center justify-center rounded-full">
@@ -96,7 +101,8 @@ const Navbar: React.FC<NavbarProps> = ({ favoritesCount }) => {
 							? "text-slate-800"
 							: "text-white lg:text-white"
 					}`}
-					onClick={() => setMobileMenuOpen(!mobileMenuOpen)}>
+					onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+				>
 					{mobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
 				</button>
 			</div>
@@ -108,7 +114,8 @@ const Navbar: React.FC<NavbarProps> = ({ favoritesCount }) => {
 						<Link
 							key={link.name}
 							to={link.path}
-							className="text-lg font-medium text-slate-800">
+							className="text-lg font-medium text-slate-800"
+						>
 							{link.name}
 						</Link>
 					))}

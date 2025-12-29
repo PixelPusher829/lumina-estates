@@ -1,4 +1,4 @@
-import React from "react";
+import type React from "react";
 import { Link } from "react-router";
 import { Quote } from "lucide-react";
 import { TESTIMONIALS } from "@/shared/data/testimonials"; // Adjusted path
@@ -19,7 +19,8 @@ const Testimonials: React.FC = () => {
 						</p>
 						<Link
 							to="/featured"
-							className="text-primary-600 font-bold hover:text-primary-700 inline-flex items-center gap-2 group">
+							className="text-primary-600 font-bold hover:text-primary-700 inline-flex items-center gap-2 group"
+						>
 							Start your story{" "}
 							<span className="group-hover:translate-x-1 transition-transform">
 								&rarr;
@@ -31,7 +32,8 @@ const Testimonials: React.FC = () => {
 						{TESTIMONIALS.map((t, idx) => (
 							<div
 								key={idx}
-								className="bg-white p-6 rounded-3xl shadow-sm border border-slate-100 hover:shadow-md transition-shadow">
+								className="bg-white p-6 rounded-3xl shadow-sm border border-slate-100 hover:shadow-md transition-shadow"
+							>
 								<div className="text-primary-300 mb-4">
 									<Quote size={24} fill="currentColor" />
 								</div>

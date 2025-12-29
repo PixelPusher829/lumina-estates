@@ -1,4 +1,4 @@
-import React from "react";
+import type React from "react";
 
 const Hero: React.FC = () => {
 	return (
@@ -11,10 +11,10 @@ const Hero: React.FC = () => {
 					Redefining luxury real estate for the modern era.
 				</h1>
 				<p className="text-xl text-slate-500 leading-relaxed">
-					Lumina Estates was founded on a simple belief: finding a
-					home should be an inspiring journey, not a stressful
-					transaction. We combine technology, design, and human
-					connection to create a seamless experience.
+					Lumina Estates was founded on a simple belief: finding a home should
+					be an inspiring journey, not a stressful transaction. We combine
+					technology, design, and human connection to create a seamless
+					experience.
 				</p>
 			</div>
 		</div>

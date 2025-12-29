@@ -1,6 +1,6 @@
-import React from "react";
+import type React from "react";
 import PropertyCard from "@/shared/layout/PropertyCard";
-import { Property } from "@/shared/types/types";
+import type { Property } from "@/shared/types/types";
 import { Search } from "lucide-react";
 
 interface FeaturedPropertyListProps {
@@ -26,7 +26,8 @@ const FeaturedPropertyList: React.FC<FeaturedPropertyListProps> = ({
 					{[1, 2, 3, 4, 5, 6].map((i) => (
 						<div
 							key={i}
-							className="h-[450px] bg-slate-200 rounded-3xl animate-pulse"></div>
+							className="h-[450px] bg-slate-200 rounded-3xl animate-pulse"
+						></div>
 					))}
 				</div>
 			) : filteredProperties.length > 0 ? (
@@ -53,7 +54,8 @@ const FeaturedPropertyList: React.FC<FeaturedPropertyListProps> = ({
 					</p>
 					<button
 						onClick={onClearFilters}
-						className="mt-6 text-primary-600 font-medium hover:text-primary-700 underline">
+						className="mt-6 text-primary-600 font-medium hover:text-primary-700 underline"
+					>
 						Clear all filters
 					</button>
 				</div>

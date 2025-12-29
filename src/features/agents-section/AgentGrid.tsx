@@ -1,18 +1,16 @@
-import React, { useEffect, useState } from "react";
-import { propertyService } from "@/shared/services/propertyService"; // Adjusted path
-import { Agent } from "@/shared/types/types"; // Adjusted path
+import type React from "react";
 import { Mail, Phone, MapPin } from "lucide-react";
 import { AGENTS as agentData } from "@/shared/data/agents";
 import { Link } from "react-router";
 
 const AgentGrid: React.FC = () => {
 	return (
-		<>
-			<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+		<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
 				{agentData.map((agent, idx) => (
 					<div
 						key={idx}
-						className="bg-white rounded-3xl overflow-hidden border border-slate-100 shadow-sm hover:shadow-xl transition-all duration-300 group">
+						className="bg-white rounded-3xl overflow-hidden border border-slate-100 shadow-sm hover:shadow-xl transition-all duration-300 group"
+					>
 						<div className="aspect-square overflow-hidden relative">
 							<img
 								src={agent.image}
@@ -22,7 +20,8 @@ const AgentGrid: React.FC = () => {
 							<div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex flex-col justify-end p-6">
 								<Link
 									to="/contact"
-									className="w-full py-3 bg-white text-slate-900 font-bold rounded-xl text-center hover:bg-slate-100 transition-colors">
+									className="w-full py-3 bg-white text-slate-900 font-bold rounded-xl text-center hover:bg-slate-100 transition-colors"
+								>
 									Contact {agent.name.split(" ")[0]}
 								</Link>
 							</div>
@@ -53,7 +52,6 @@ const AgentGrid: React.FC = () => {
 					</div>
 				))}
 			</div>
-		</>
 	);
 };
 

@@ -1,4 +1,4 @@
-import React from "react";
+import type React from "react";
 import { Search, SlidersHorizontal, X } from "lucide-react";
 
 interface FeaturedFiltersProps {
@@ -43,7 +43,8 @@ const FeaturedFilters: React.FC<FeaturedFiltersProps> = ({
 							onClick={() => {
 								setSearchTerm("");
 							}}
-							className="absolute right-3 top-1/2 -translate-y-1/2 text-slate-400 hover:text-slate-600 p-1">
+							className="absolute right-3 top-1/2 -translate-y-1/2 text-slate-400 hover:text-slate-600 p-1"
+						>
 							<X size={16} />
 						</button>
 					)}
@@ -65,7 +66,8 @@ const FeaturedFilters: React.FC<FeaturedFiltersProps> = ({
 								filterType === type
 									? "bg-primary-600 text-white"
 									: "bg-slate-50 text-slate-600 hover:bg-slate-100"
-							}`}>
+							}`}
+						>
 							{type}
 						</button>
 					))}

@@ -1,4 +1,4 @@
-import React from "react";
+import type React from "react";
 import { Link } from "react-router";
 import { ArrowLeft, Share2, Heart } from "lucide-react";
 
@@ -17,7 +17,8 @@ const NavHeader: React.FC<NavHeaderProps> = ({
 		<div className="flex items-center justify-between py-6">
 			<Link
 				to="/"
-				className="inline-flex items-center gap-2 text-slate-500 hover:text-slate-900 transition-colors font-medium">
+				className="inline-flex items-center gap-2 text-slate-500 hover:text-slate-900 transition-colors font-medium"
+			>
 				<ArrowLeft size={20} />
 				<span className="hidden sm:inline">Back to Listings</span>
 				<span className="sm:hidden">Back</span>
@@ -32,7 +33,8 @@ const NavHeader: React.FC<NavHeaderProps> = ({
 						isFavorite
 							? "bg-rose-50 border-rose-200 text-rose-500"
 							: "bg-white border-slate-200 text-slate-600 hover:border-rose-200 hover:text-rose-500"
-					}`}>
+					}`}
+				>
 					<Heart size={18} fill={isFavorite ? "currentColor" : "none"} />
 				</button>
 			</div>

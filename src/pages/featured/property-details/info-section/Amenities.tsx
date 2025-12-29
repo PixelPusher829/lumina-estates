@@ -1,5 +1,5 @@
-import React from "react";
-import { Property } from "@/shared/types/types";
+import type React from "react";
+import type { Property } from "@/shared/types/types";
 import { CheckCircle2 } from "lucide-react";
 
 interface PropertyAmenitiesProps {

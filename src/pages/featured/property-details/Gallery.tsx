@@ -1,5 +1,6 @@
-import React, { useState } from "react";
-import { Property } from "@/shared/types/types"; // Adjusted path
+import type React from "react";
+import { useState } from "react";
+import type { Property } from "@/shared/types/types"; // Adjusted path
 import { ChevronLeft, ChevronRight, ImageIcon } from "lucide-react";
 
 interface GalleryProps {
@@ -45,12 +46,14 @@ const Gallery: React.FC<GalleryProps> = ({ property }) => {
 					<div className="absolute inset-0 flex items-center justify-between px-4 lg:opacity-0 lg:group-hover:opacity-100 transition-opacity z-10 pointer-events-none">
 						<button
 							onClick={prevImage}
-							className="w-10 h-10 flex items-center justify-center rounded-full bg-white/90 text-slate-900 shadow-md hover:scale-110 transition-transform pointer-events-auto cursor-pointer">
+							className="w-10 h-10 flex items-center justify-center rounded-full bg-white/90 text-slate-900 shadow-md hover:scale-110 transition-transform pointer-events-auto cursor-pointer"
+						>
 							<ChevronLeft size={20} />
 						</button>
 						<button
 							onClick={nextImage}
-							className="w-10 h-10 flex items-center justify-center rounded-full bg-white/90 text-slate-900 shadow-md hover:scale-110 transition-transform pointer-events-auto cursor-pointer">
+							className="w-10 h-10 flex items-center justify-center rounded-full bg-white/90 text-slate-900 shadow-md hover:scale-110 transition-transform pointer-events-auto cursor-pointer"
+						>
 							<ChevronRight size={20} />
 						</button>
 					</div>
@@ -69,7 +72,8 @@ const Gallery: React.FC<GalleryProps> = ({ property }) => {
 					<div
 						key={idx}
 						className="relative flex-1 rounded-2xl overflow-hidden cursor-pointer group"
-						onClick={() => setActiveImage(img.index)}>
+						onClick={() => setActiveImage(img.index)}
+					>
 						<img
 							src={img.src}
 							alt="Gallery thumbnail"

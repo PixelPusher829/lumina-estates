@@ -1,11 +1,10 @@
-import React from "react";
+import type React from "react";
 import Hero from "@/pages/home/Hero"; // Existing component
-
-import Services from "./Services";
+import Cta from "./Cta";
 import FeaturedProperties from "./FeaturedProperties";
 import Neighbourhoods from "./Neighbourhoods";
+import Services from "./Services";
 import Testimonials from "./Testimonials";
-import Cta from "./Cta";
 
 interface HomeProps {
 	favorites: string[];

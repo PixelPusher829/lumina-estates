@@ -1,4 +1,4 @@
-import React from "react";
+import type React from "react";
 import { Link } from "react-router";
 import { NEIGHBOURHOODS } from "@/shared/data/neighbourhoods";
 
@@ -17,11 +17,9 @@ const Neighbourhoods: React.FC = () => {
 				</div>
 
 				<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-					{NEIGHBOURHOODS.map((hood, idx) => (
-						<Link to={`/featured?q=${hood.name}`} key={idx} className="">
-							<div
-								key={idx}
-								className="group relative rounded-3xl overflow-hidden aspect-4/5 cursor-pointer">
+					{NEIGHBOURHOODS.map((hood) => (
+						<Link to={`/featured?q=${hood.name}`} key={hood.name} className="">
+							<div className="group relative rounded-3xl overflow-hidden aspect-4/5 cursor-pointer">
 								<img
 									src={hood.image}
 									alt={hood.name}

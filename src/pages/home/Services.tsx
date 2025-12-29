@@ -1,5 +1,10 @@
-import React from "react";
-import { ShieldCheck, Zap, HeartHandshake, Home as HomeIcon } from "lucide-react";
+import type React from "react";
+import {
+	ShieldCheck,
+	Zap,
+	HeartHandshake,
+	Home as HomeIcon,
+} from "lucide-react";
 
 const Services: React.FC = () => {
 	return (
@@ -40,7 +45,8 @@ const Services: React.FC = () => {
 					].map((service, idx) => (
 						<div
 							key={idx}
-							className="p-8 rounded-3xl bg-slate-50 hover:bg-white border border-slate-100 hover:shadow-xl transition-all duration-300 group">
+							className="p-8 rounded-3xl bg-slate-50 hover:bg-white border border-slate-100 hover:shadow-xl transition-all duration-300 group"
+						>
 							<div className="w-14 h-14 bg-white rounded-2xl flex items-center justify-center text-primary-600 mb-6 shadow-sm group-hover:bg-primary-600 group-hover:text-white transition-colors">
 								<service.icon size={28} />
 							</div>

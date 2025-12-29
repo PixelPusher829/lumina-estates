@@ -1,5 +1,5 @@
-import React from "react";
-import { Property } from "@/shared/types/types";
+import type React from "react";
+import type { Property } from "@/shared/types/types";
 import { Link } from "react-router";
 import { AGENTS as agentData } from "@/shared/data/agents";
 
@@ -23,7 +23,8 @@ const AgentCard: React.FC<AgentCardProps> = ({ property }) => {
 				<div className="flex gap-2 mt-1">
 					<Link
 						to="/agents"
-						className="text-primary-600 cursor-pointer hover:underline text-xs font-semibold">
+						className="text-primary-600 cursor-pointer hover:underline text-xs font-semibold"
+					>
 						View Profile
 					</Link>
 				</div>

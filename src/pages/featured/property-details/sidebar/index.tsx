@@ -1,5 +1,5 @@
-import React from "react";
-import { Property } from "@/shared/types/types";
+import type React from "react";
+import type { Property } from "@/shared/types/types";
 import PricingCard from "./PricingCard";
 import AgentCard from "./AgentCard";
 

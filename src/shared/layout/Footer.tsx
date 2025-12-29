@@ -1,6 +1,5 @@
-import React from "react";
+import type React from "react";
 import {
-	Building2,
 	Facebook,
 	Twitter,
 	Instagram,
@@ -33,22 +32,26 @@ const Footer: React.FC = () => {
 						<div className="flex gap-4">
 							<a
 								href="#"
-								className="p-2 bg-slate-800 rounded-full hover:bg-primary-600 text-slate-400 hover:text-white transition-all">
+								className="p-2 bg-slate-800 rounded-full hover:bg-primary-600 text-slate-400 hover:text-white transition-all"
+							>
 								<Facebook size={18} />
 							</a>
 							<a
 								href="#"
-								className="p-2 bg-slate-800 rounded-full hover:bg-primary-600 text-slate-400 hover:text-white transition-all">
+								className="p-2 bg-slate-800 rounded-full hover:bg-primary-600 text-slate-400 hover:text-white transition-all"
+							>
 								<Twitter size={18} />
 							</a>
 							<a
 								href="#"
-								className="p-2 bg-slate-800 rounded-full hover:bg-primary-600 text-slate-400 hover:text-white transition-all">
+								className="p-2 bg-slate-800 rounded-full hover:bg-primary-600 text-slate-400 hover:text-white transition-all"
+							>
 								<Instagram size={18} />
 							</a>
 							<a
 								href="#"
-								className="p-2 bg-slate-800 rounded-full hover:bg-primary-600 text-slate-400 hover:text-white transition-all">
+								className="p-2 bg-slate-800 rounded-full hover:bg-primary-600 text-slate-400 hover:text-white transition-all"
+							>
 								<Linkedin size={18} />
 							</a>
 						</div>
@@ -61,28 +64,32 @@ const Footer: React.FC = () => {
 							<li>
 								<Link
 									to="/featured"
-									className="text-slate-400 hover:text-white hover:translate-x-1 transition-all inline-block">
+									className="text-slate-400 hover:text-white hover:translate-x-1 transition-all inline-block"
+								>
 									Properties
 								</Link>
 							</li>
 							<li>
 								<Link
 									to="/about"
-									className="text-slate-400 hover:text-white hover:translate-x-1 transition-all inline-block">
+									className="text-slate-400 hover:text-white hover:translate-x-1 transition-all inline-block"
+								>
 									About Us
 								</Link>
 							</li>
 							<li>
 								<Link
 									to="/agents"
-									className="text-slate-400 hover:text-white hover:translate-x-1 transition-all inline-block">
+									className="text-slate-400 hover:text-white hover:translate-x-1 transition-all inline-block"
+								>
 									Our Agents
 								</Link>
 							</li>
 							<li>
 								<Link
 									to="/services"
-									className="text-slate-400 hover:text-white hover:translate-x-1 transition-all inline-block">
+									className="text-slate-400 hover:text-white hover:translate-x-1 transition-all inline-block"
+								>
 									Services
 								</Link>
 							</li>
@@ -96,28 +103,32 @@ const Footer: React.FC = () => {
 							<li>
 								<Link
 									to="/help"
-									className="text-slate-400 hover:text-white hover:translate-x-1 transition-all inline-block">
+									className="text-slate-400 hover:text-white hover:translate-x-1 transition-all inline-block"
+								>
 									Help Center
 								</Link>
 							</li>
 							<li>
 								<Link
 									to="/faq"
-									className="text-slate-400 hover:text-white hover:translate-x-1 transition-all inline-block">
+									className="text-slate-400 hover:text-white hover:translate-x-1 transition-all inline-block"
+								>
 									FAQ
 								</Link>
 							</li>
 							<li>
 								<Link
 									to="/contact"
-									className="text-slate-400 hover:text-white hover:translate-x-1 transition-all inline-block">
+									className="text-slate-400 hover:text-white hover:translate-x-1 transition-all inline-block"
+								>
 									Contact Us
 								</Link>
 							</li>
 							<li>
 								<Link
 									to="/legal"
-									className="text-slate-400 hover:text-white hover:translate-x-1 transition-all inline-block">
+									className="text-slate-400 hover:text-white hover:translate-x-1 transition-all inline-block"
+								>
 									Terms & Legal
 								</Link>
 							</li>

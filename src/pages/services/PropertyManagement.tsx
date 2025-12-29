@@ -1,4 +1,4 @@
-import React from "react";
+import type React from "react";
 import { Key } from "lucide-react";
 import tenantImg from "@/shared/images/services/tenant.webp";
 import propertyImg from "@/shared/images/services/property.webp";

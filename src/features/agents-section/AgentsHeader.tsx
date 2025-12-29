@@ -1,4 +1,4 @@
-import React from "react";
+import type React from "react";
 
 const AgentsHeader: React.FC = () => {
 	return (
@@ -7,8 +7,8 @@ const AgentsHeader: React.FC = () => {
 				Meet Our Agents
 			</h1>
 			<p className="text-slate-500">
-				Our team of dedicated professionals is here to guide you
-				through every step of your real estate journey.
+				Our team of dedicated professionals is here to guide you through every
+				step of your real estate journey.
 			</p>
 		</div>
 	);

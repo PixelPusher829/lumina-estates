@@ -1,5 +1,6 @@
-import React, { useState } from "react";
-import { Search, MapPin } from "lucide-react";
+import { MapPin, Search } from "lucide-react";
+import type React from "react";
+import { useState } from "react";
 import { useNavigate } from "react-router";
 import hero from "@/shared/images/home/hero.webp";
 
@@ -64,7 +65,9 @@ const Hero: React.FC = () => {
 						<div className="w-full md:w-auto">
 							<button
 								onClick={handleSearch}
-								className="w-full md:w-auto bg-primary-700 hover:bg-primary-800 text-white px-8 py-3 rounded-xl font-semibold transition-colors flex items-center justify-center gap-2">
+								type="button"
+								className="w-full md:w-auto bg-primary-700 hover:bg-primary-800 text-white px-8 py-3 rounded-xl font-semibold transition-colors flex items-center justify-center gap-2"
+							>
 								<Search size={20} />
 								Search
 							</button>

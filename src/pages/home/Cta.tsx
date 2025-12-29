@@ -1,4 +1,4 @@
-import React from "react";
+import type React from "react";
 import { Link } from "react-router";
 
 const Cta: React.FC = () => {
@@ -15,7 +15,8 @@ const Cta: React.FC = () => {
 				</p>
 				<Link
 					to="/featured"
-					className="inline-block px-10 py-4 bg-white text-primary-900 font-bold rounded-xl hover:bg-primary-50 hover:scale-105 transition-all shadow-xl">
+					className="inline-block px-10 py-4 bg-white text-primary-900 font-bold rounded-xl hover:bg-primary-50 hover:scale-105 transition-all shadow-xl"
+				>
 					Start Your Search
 				</Link>
 			</div>

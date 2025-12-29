@@ -1,4 +1,4 @@
-import React from "react";
+import type React from "react";
 import { Link } from "react-router";
 
 const FaqCta: React.FC = () => {
@@ -15,7 +15,8 @@ const FaqCta: React.FC = () => {
 				</p>
 				<Link
 					to="/contact"
-					className="inline-block px-8 py-3 bg-white text-primary-900 font-bold rounded-xl hover:bg-primary-50 transition-colors shadow-xl">
+					className="inline-block px-8 py-3 bg-white text-primary-900 font-bold rounded-xl hover:bg-primary-50 transition-colors shadow-xl"
+				>
 					Get in Touch
 				</Link>
 			</div>

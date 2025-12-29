@@ -1,4 +1,4 @@
-import React from "react";
+import type React from "react";
 import AgentsSection from "@/features/agents-section";
 
 const Agents: React.FC = () => {

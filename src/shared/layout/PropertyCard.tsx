@@ -1,7 +1,7 @@
-import React from "react";
+import type React from "react";
 import { Link } from "react-router";
 import { Heart, MapPin, Bed, Bath, Move, ArrowUpRight } from "lucide-react";
-import { Property } from "@/shared/types";
+import type { Property } from "@/shared/types";
 
 interface PropertyCardProps {
 	property: Property;
@@ -47,7 +47,8 @@ const PropertyCard: React.FC<PropertyCardProps> = ({
 							isFavorite
 								? "bg-rose-500 text-white shadow-lg shadow-rose-500/30"
 								: "bg-white/30 text-white hover:bg-white hover:text-rose-500"
-						}`}>
+						}`}
+					>
 						<Heart size={18} fill={isFavorite ? "currentColor" : "none"} />
 					</button>
 

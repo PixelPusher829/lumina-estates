@@ -1,7 +1,7 @@
+import aspen from "@/shared/images/home/neighbourhoods/aspen.webp";
+import lakeside from "@/shared/images/home/neighbourhoods/lakeside.webp";
 import metropolis from "@/shared/images/home/neighbourhoods/metropolis.webp";
 import oakwood from "@/shared/images/home/neighbourhoods/oakwood.webp";
-import lakeside from "@/shared/images/home/neighbourhoods/lakeside.webp";
-import aspen from "@/shared/images/home/neighbourhoods/aspen.webp";
 
 export const NEIGHBOURHOODS = [
 	{

@@ -1,18 +1,16 @@
-import React, { useEffect, useState } from "react";
+import type React from "react";
+import { useEffect, useState } from "react";
 import { Link } from "react-router";
-import PropertyCard from "@/shared/layout/PropertyCard"; // Adjusted path
-import { Property } from "@/shared/types/types"; // Adjusted path
-import { propertyService } from "@/shared/services/propertyService"; // Adjusted path
+import PropertyCard from "@/shared/layout/PropertyCard"; 
+import { propertyService } from "@/shared/services/propertyService"; 
+import type { Property } from "@/shared/types/types"; 
 
-interface FeaturedPropertiesSectionProps {
-	favorites: string[];
-	onToggleFavorite: (id: string) => void;
-}
+// interface FeaturedPropertiesSectionProps {
+// 	favorites: string[];
+// 	onToggleFavorite: (id: string) => void;
+// }
 
-const FeaturedProperties: React.FC = ({
-	favorites,
-	onToggleFavorite,
-}) => {
+const FeaturedProperties: React.FC = ({ favorites, onToggleFavorite }) => {
 	const [properties, setProperties] = useState<Property[]>([]);
 	const [loading, setLoading] = useState(true);
 
@@ -51,7 +49,8 @@ const FeaturedProperties: React.FC = ({
 					</div>
 					<Link
 						to="/featured"
-						className="hidden md:block px-6 py-3 bg-white border border-slate-200 text-slate-700 font-semibold rounded-xl hover:bg-slate-50 transition-colors">
+						className="hidden md:block px-6 py-3 bg-white border border-slate-200 text-slate-700 font-semibold rounded-xl hover:bg-slate-50 transition-colors"
+					>
 						View All Properties
 					</Link>
 				</div>
@@ -61,7 +60,8 @@ const FeaturedProperties: React.FC = ({
 						{[1, 2, 3].map((i) => (
 							<div
 								key={i}
-								className="h-30 bg-slate-200 rounded-3xl animate-pulse"></div>
+								className="h-30 bg-slate-200 rounded-3xl animate-pulse"
+							></div>
 						))}
 					</div>
 				) : (
@@ -80,7 +80,8 @@ const FeaturedProperties: React.FC = ({
 				<div className="mt-12 text-center md:hidden">
 					<Link
 						to="/featured"
-						className="w-full px-6 py-3 bg-white border border-slate-200 text-slate-700 font-semibold rounded-xl hover:bg-slate-50 transition-colors inline-block">
+						className="w-full px-6 py-3 bg-white border border-slate-200 text-slate-700 font-semibold rounded-xl hover:bg-slate-50 transition-colors inline-block"
+					>
 						View All Properties
 					</Link>
 				</div>

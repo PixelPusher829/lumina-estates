@@ -1,6 +1,7 @@
-import React, { useEffect, useState } from "react";
+import type React from "react";
+import { useEffect, useState } from "react";
 import { propertyService } from "@/shared/services/propertyService";
-import { Property } from "@/shared/types/types";
+import type { Property } from "@/shared/types/types";
 import { useSearchParams } from "react-router";
 
 import Header from "./Header";
@@ -48,7 +49,7 @@ const Featured: React.FC<FeaturedProps> = ({ favorites, toggleFavorite }) => {
 			newParams.delete("q");
 		}
 		setSearchParams(newParams);
-	}, [searchTerm, setSearchParams]);
+	}, [searchTerm, setSearchParams, searchParams]);
 
 	const handleFavoriteClick = (id: string) => {
 		toggleFavorite(id);
