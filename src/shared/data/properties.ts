@@ -1,3 +1,6 @@
+"/images/properties/skyper-pool-apartment/skyper-pool-apartment-1.webp"
+
+
 export const YAML_DATA_SOURCE = `
 - id: "prop_001"
   title: "Skyper Pool Apartment"
@@ -14,9 +17,11 @@ export const YAML_DATA_SOURCE = `
   tags: ["Pool", "Smart Home", "View"]
   agent: "Sarah Jenkins"
   images:
-    - "https://images.unsplash.com/photo-1512918760532-3ad83864e3c5?auto=format&fit=crop&q=80&w=1200"
-    - "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&q=80&w=1200"
-    - "https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&q=80&w=1200"
+    - "/images/properties/skyper-pool-apartment/featured-1.webp"
+    - "/images/properties/skyper-pool-apartment/featured-2.webp"
+    - "/images/properties/skyper-pool-apartment/featured-3.webp"
+    - "/images/properties/skyper-pool-apartment/featured-4.webp"
+    - "/images/properties/skyper-pool-apartment/featured-5.webp"
   isNew: true
 
 - id: "prop_002"
@@ -34,9 +39,12 @@ export const YAML_DATA_SOURCE = `
   tags: ["Garden", "Eco-Friendly", "Garage"]
   agent: "Michael Chen"
   images:
-    - "https://images.unsplash.com/photo-1600596542815-2a4d9f799051?auto=format&fit=crop&q=80&w=1200"
-    - "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&q=80&w=1200"
-    - "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&q=80&w=1200"
+    - "/images/properties/cedar-residence/featured-1.webp"
+    - "/images/properties/cedar-residence/featured-2.webp"
+    - "/images/properties/cedar-residence/featured-3.webp"
+    - "/images/properties/cedar-residence/featured-4.webp"
+    - "/images/properties/cedar-residence/featured-5.webp"
+    - "/images/properties/cedar-residence/featured-6.webp"
 
 - id: "prop_003"
   title: "Lakeside Loft"
@@ -53,9 +61,13 @@ export const YAML_DATA_SOURCE = `
   tags: ["Waterfront", "Loft", "Historic"]
   agent: "Jessica Alba"
   images:
-    - "https://images.unsplash.com/photo-1600607686527-6fb886090705?auto=format&fit=crop&q=80&w=1200"
-    - "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?auto=format&fit=crop&q=80&w=1200"
-    - "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&q=80&w=1200"
+    - "/images/properties/lakeside-loft/featured-1.webp"
+    - "/images/properties/lakeside-loft/featured-2.webp"
+    - "/images/properties/lakeside-loft/featured-3.webp"
+    - "/images/properties/lakeside-loft/featured-4.webp"
+    - "/images/properties/lakeside-loft/featured-5.webp"
+    - "/images/properties/lakeside-loft/featured-6.webp"
+    - "/images/properties/lakeside-loft/featured-7.webp"
 
 - id: "prop_004"
   title: "Modern Glass Penthouse"
@@ -72,10 +84,12 @@ export const YAML_DATA_SOURCE = `
   tags: ["Penthouse", "Luxury", "Concierge"]
   agent: "David Sterling"
   images:
-    - "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&q=80&w=1200"
-    - "https://images.unsplash.com/photo-1600585154526-990dced4db0d?auto=format&fit=crop&q=80&w=1200"
-    - "https://images.unsplash.com/photo-1600607687644-c7171b42498f?auto=format&fit=crop&q=80&w=1200"
-    - "https://images.unsplash.com/photo-1600607686459-02eb32149b5c?auto=format&fit=crop&q=80&w=1200"
+    - "/images/properties/modern-glass-penthouse/featured-1.webp"
+    - "/images/properties/modern-glass-penthouse/featured-2.webp"
+    - "/images/properties/modern-glass-penthouse/featured-3.webp"
+    - "/images/properties/modern-glass-penthouse/featured-4.webp"
+    - "/images/properties/modern-glass-penthouse/featured-5.webp"
+    - "/images/properties/modern-glass-penthouse/featured-6.webp"
 
 - id: "prop_005"
   title: "Suburban Family Haven"
@@ -92,9 +106,11 @@ export const YAML_DATA_SOURCE = `
   tags: ["Family", "School District", "Backyard"]
   agent: "Karen Miller"
   images:
-    - "https://images.unsplash.com/photo-1568605114967-8130f3a36994?auto=format&fit=crop&q=80&w=1200"
-    - "https://images.unsplash.com/photo-1556911220-e15b29be8c8f?auto=format&fit=crop&q=80&w=1200"
-    - "https://images.unsplash.com/photo-1584622050111-993a426fbf0a?auto=format&fit=crop&q=80&w=1200"
+    - "/images/properties/suburban-family-haven/featured-1.webp"
+    - "/images/properties/suburban-family-haven/featured-2.webp"
+    - "/images/properties/suburban-family-haven/featured-3.webp"
+    - "/images/properties/suburban-family-haven/featured-4.webp"
+    - "/images/properties/suburban-family-haven/featured-5.webp"
 
 - id: "prop_006"
   title: "Minimalist Desert Oasis"
@@ -111,9 +127,14 @@ export const YAML_DATA_SOURCE = `
   tags: ["Desert", "Modern", "Pool"]
   agent: "Alex Rivera"
   images:
-    - "https://images.unsplash.com/photo-1472224371017-08207f84aaae?auto=format&fit=crop&q=80&w=1200"
-    - "https://images.unsplash.com/photo-1507089947368-19c1da9775ae?auto=format&fit=crop&q=80&w=1200"
-    - "https://images.unsplash.com/photo-1523217582562-09d0def993a6?auto=format&fit=crop&q=80&w=1200"
+    - "/images/properties/minimalist-desert-oasis/featured-1.webp"
+    - "/images/properties/minimalist-desert-oasis/featured-2.webp"
+    - "/images/properties/minimalist-desert-oasis/featured-3.webp"
+    - "/images/properties/minimalist-desert-oasis/featured-4.webp"
+    - "/images/properties/minimalist-desert-oasis/featured-5.webp"
+    - "/images/properties/minimalist-desert-oasis/featured-6.webp"
+    - "/images/properties/minimalist-desert-oasis/featured-7.webp"
+    - "/images/properties/minimalist-desert-oasis/featured-8.webp"
 
 - id: "prop_007"
   title: "Historic Brownstone"
@@ -130,9 +151,15 @@ export const YAML_DATA_SOURCE = `
   tags: ["Historic", "Garden", "Fireplace"]
   agent: "Sarah Jenkins"
   images:
-    - "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&q=80&w=1200"
-    - "https://images.unsplash.com/photo-1494526585095-c41746248156?auto=format&fit=crop&q=80&w=1200"
-    - "https://images.unsplash.com/photo-1460317442991-0ec209397118?auto=format&fit=crop&q=80&w=1200"
+    - "/images/properties/historic-brownstone/featured-1.webp"
+    - "/images/properties/historic-brownstone/featured-2.webp"
+    - "/images/properties/historic-brownstone/featured-3.webp"
+    - "/images/properties/historic-brownstone/featured-4.webp"
+    - "/images/properties/historic-brownstone/featured-5.webp"
+    - "/images/properties/historic-brownstone/featured-6.webp"
+    - "/images/properties/historic-brownstone/featured-7.webp"
+    - "/images/properties/historic-brownstone/featured-8.webp"
+
 
 - id: "prop_008"
   title: "Beachfront Bungalow"
@@ -149,9 +176,14 @@ export const YAML_DATA_SOURCE = `
   tags: ["Beachfront", "Cozy", "View"]
   agent: "Jessica Alba"
   images:
-    - "https://images.unsplash.com/photo-1499793983690-e29da59ef1c2?auto=format&fit=crop&q=80&w=1200"
-    - "https://images.unsplash.com/photo-1505238680356-667803448bb6?auto=format&fit=crop&q=80&w=1200"
-    - "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&q=80&w=1200"
+    - "/images/properties/beachfront-bungalow/featured-1.webp"
+    - "/images/properties/beachfront-bungalow/featured-2.webp"
+    - "/images/properties/beachfront-bungalow/featured-3.webp"
+    - "/images/properties/beachfront-bungalow/featured-4.webp"
+    - "/images/properties/beachfront-bungalow/featured-5.webp"
+    - "/images/properties/beachfront-bungalow/featured-6.webp"
+    - "/images/properties/beachfront-bungalow/featured-7.webp"
+    - "/images/properties/beachfront-bungalow/featured-8.webp"
 
 - id: "prop_009"
   title: "Alpine Ski Chalet"
@@ -168,8 +200,13 @@ export const YAML_DATA_SOURCE = `
   tags: ["Ski-in/Ski-out", "Mountain View", "Fireplace"]
   agent: "David Sterling"
   images:
-    - "https://images.unsplash.com/photo-1518730518541-d0843268c287?auto=format&fit=crop&q=80&w=1200"
-    - "https://images.unsplash.com/photo-1516455590571-18256e5bb9ff?auto=format&fit=crop&q=80&w=1200"
-    - "https://images.unsplash.com/photo-1542718610-a1d656d1884c?auto=format&fit=crop&q=80&w=1200"
+    - "/images/properties/alpine-ski-chalet/featured-1.webp"
+    - "/images/properties/alpine-ski-chalet/featured-2.webp"
+    - "/images/properties/alpine-ski-chalet/featured-3.webp"
+    - "/images/properties/alpine-ski-chalet/featured-4.webp"
+    - "/images/properties/alpine-ski-chalet/featured-5.webp"
+    - "/images/properties/alpine-ski-chalet/featured-6.webp"
+    - "/images/properties/alpine-ski-chalet/featured-7.webp"
+    - "/images/properties/alpine-ski-chalet/featured-8.webp"
   isNew: true
 `;
