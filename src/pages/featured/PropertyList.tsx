@@ -26,7 +26,7 @@ const FeaturedPropertyList: React.FC<FeaturedPropertyListProps> = ({
 					{[1, 2, 3, 4, 5, 6].map((i) => (
 						<div
 							key={i}
-							className="h-[450px] bg-slate-200 rounded-3xl animate-pulse"
+							className="h-450px bg-slate-200 rounded-3xl animate-pulse"
 						></div>
 					))}
 				</div>

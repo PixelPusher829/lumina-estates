@@ -9,7 +9,7 @@ const Investment: React.FC = () => {
 				<div className="flex flex-col lg:flex-row-reverse items-center gap-16 lg:gap-24">
 					{/* Text Content */}
 					<div className="lg:w-1/2 relative z-10">
-						<div className="w-12 h-12 bg-emerald-50 rounded-2xl flex items-center justify-center text-emerald-600 mb-6">
+						<div className="w-12 h-12 bg-emerald-50 rounded-2xl flex items-center justify-center text-emerald-400 mb-6">
 							<TrendingUp size={24} />
 						</div>
 						<h2 className="text-4xl font-bold text-slate-900 mb-6">
@@ -22,7 +22,7 @@ const Investment: React.FC = () => {
 							high-growth corridors and turnkey rental opportunities before they
 							hit the mass market.
 						</p>
-						<button className="text-emerald-700 font-bold hover:text-emerald-800 inline-flex items-center gap-2 group">
+						<button className="text-primary-700 font-bold hover:text-primary-800 inline-flex items-center gap-2 group">
 							View Market Reports{" "}
 							<ArrowRight
 								size={20}

@@ -49,7 +49,7 @@ const FeaturedProperties: React.FC = ({ favorites, onToggleFavorite }) => {
 					</div>
 					<Link
 						to="/featured"
-						className="hidden md:block px-6 py-3 bg-white border border-slate-200 text-slate-700 font-semibold rounded-xl hover:bg-slate-50 transition-colors"
+						className="hidden md:block px-6 py-3 bg-white border border-slate-200 text-slate-700 font-semibold rounded-xl hover:bg-slate-50 hover:text-primary-600 transition-colors"
 					>
 						View All Properties
 					</Link>

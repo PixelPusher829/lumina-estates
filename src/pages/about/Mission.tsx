@@ -24,28 +24,28 @@ const Mission: React.FC = () => {
 					</div>
 					<div className="grid grid-cols-2 gap-6">
 						<div className="bg-white p-6 rounded-2xl shadow-sm">
-							<Target className="text-primary-600 mb-4" size={32} />
+							<Target className="text-emerald-400 mb-4" size={32} />
 							<h3 className="font-bold text-slate-900 mb-2">Precision</h3>
 							<p className="text-sm text-slate-500">
 								Targeted search and marketing strategies.
 							</p>
 						</div>
 						<div className="bg-white p-6 rounded-2xl shadow-sm">
-							<Users className="text-primary-600 mb-4" size={32} />
+							<Users className="text-emerald-400 mb-4" size={32} />
 							<h3 className="font-bold text-slate-900 mb-2">Community</h3>
 							<p className="text-sm text-slate-500">
 								Building strong local networks.
 							</p>
 						</div>
 						<div className="bg-white p-6 rounded-2xl shadow-sm">
-							<Award className="text-primary-600 mb-4" size={32} />
+							<Award className="text-emerald-400 mb-4" size={32} />
 							<h3 className="font-bold text-slate-900 mb-2">Excellence</h3>
 							<p className="text-sm text-slate-500">
 								Award-winning service standards.
 							</p>
 						</div>
 						<div className="bg-white p-6 rounded-2xl shadow-sm">
-							<TrendingUp className="text-primary-600 mb-4" size={32} />
+							<TrendingUp className="text-emerald-400 mb-4" size={32} />
 							<h3 className="font-bold text-slate-900 mb-2">Growth</h3>
 							<p className="text-sm text-slate-500">
 								Focus on long-term asset value.

@@ -47,7 +47,7 @@ const Services: React.FC = () => {
 							key={idx}
 							className="p-8 rounded-3xl bg-slate-50 hover:bg-white border border-slate-100 hover:shadow-xl transition-all duration-300 group"
 						>
-							<div className="w-14 h-14 bg-white rounded-2xl flex items-center justify-center text-primary-600 mb-6 shadow-sm group-hover:bg-primary-600 group-hover:text-white transition-colors">
+							<div className="w-14 h-14 bg-white rounded-2xl flex items-center justify-center text-emerald-400 mb-6 shadow-sm group-hover:bg-emerald-400 group-hover:text-white transition-colors">
 								<service.icon size={28} />
 							</div>
 							<h3 className="text-lg font-bold text-slate-900 mb-3">

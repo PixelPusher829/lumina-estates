@@ -10,7 +10,7 @@ const PropertyManagement: React.FC = () => {
 				<div className="flex flex-col lg:flex-row items-center gap-16 lg:gap-24">
 					{/* Text Content */}
 					<div className="lg:w-1/2 relative z-10">
-						<div className="w-12 h-12 bg-indigo-50 rounded-2xl flex items-center justify-center text-indigo-600 mb-6">
+						<div className="w-12 h-12 bg-emerald-50 rounded-2xl flex items-center justify-center text-emerald-400 mb-6">
 							<Key size={24} />
 						</div>
 						<h2 className="text-4xl font-bold text-slate-900 mb-6">

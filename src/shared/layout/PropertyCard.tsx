@@ -18,7 +18,7 @@ const PropertyCard: React.FC<PropertyCardProps> = ({
 		<Link to={`/property/${property.id}`} className="block group">
 			<div className="bg-white rounded-3xl overflow-hidden border border-slate-100 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 h-full flex flex-col">
 				{/* Image Container */}
-				<div className="relative aspect-[4/3] overflow-hidden">
+				<div className="relative aspect-4/3 overflow-hidden">
 					<img
 						src={property.images[0]}
 						alt={property.title}
@@ -26,7 +26,7 @@ const PropertyCard: React.FC<PropertyCardProps> = ({
 					/>
 
 					{/* Overlay Gradient */}
-					<div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-60"></div>
+					<div className="absolute inset-0 bg-linear-to-t from-black/50 to-transparent opacity-60"></div>
 
 					{/* Badges */}
 					<div className="absolute top-4 left-4 flex gap-2">

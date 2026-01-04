@@ -66,7 +66,7 @@ const Hero: React.FC = () => {
 							<button
 								onClick={handleSearch}
 								type="button"
-								className="w-full md:w-auto bg-primary-700 hover:bg-primary-800 text-white px-8 py-3 rounded-xl font-semibold transition-colors flex items-center justify-center gap-2"
+								className="w-full md:w-auto bg-primary-700 hover:bg-primary-600 text-white px-8 py-3 rounded-xl font-semibold transition-colors flex items-center justify-center gap-2"
 							>
 								<Search size={20} />
 								Search

@@ -11,7 +11,7 @@ const ContactInfo: React.FC = () => {
 
 				<div className="space-y-6">
 					<div className="flex items-start gap-4">
-						<div className="p-3 bg-primary-50 text-primary-600 rounded-xl">
+						<div className="p-3 bg-emerald-50 text-emerald-400 rounded-xl">
 							<Phone size={20} />
 						</div>
 						<div>
@@ -24,7 +24,7 @@ const ContactInfo: React.FC = () => {
 					</div>
 
 					<div className="flex items-start gap-4">
-						<div className="p-3 bg-primary-50 text-primary-600 rounded-xl">
+						<div className="p-3 bg-emerald-50 text-emerald-400 rounded-xl">
 							<Mail size={20} />
 						</div>
 						<div>
@@ -37,7 +37,7 @@ const ContactInfo: React.FC = () => {
 					</div>
 
 					<div className="flex items-start gap-4">
-						<div className="p-3 bg-primary-50 text-primary-600 rounded-xl">
+						<div className="p-3 bg-emerald-50 text-emerald-400 rounded-xl">
 							<MapPin size={20} />
 						</div>
 						<div>
@@ -52,18 +52,18 @@ const ContactInfo: React.FC = () => {
 			</div>
 
 			{/* FAQ Mini Card */}
-			<div className="bg-primary-900 p-8 rounded-3xl shadow-lg text-white relative overflow-hidden">
-				<div className="absolute top-0 right-0 w-32 h-32 bg-primary-700 rounded-full blur-2xl -mr-10 -mt-10"></div>
+			<div className="bg-emerald-500 p-8 rounded-3xl shadow-lg text-white relative overflow-hidden">
+				<div className="absolute top-0 right-0 w-32 h-32 bg-emerald-400 rounded-full blur-2xl -mr-10 -mt-10"></div>
 				<div className="relative z-10">
 					<h3 className="text-xl font-bold mb-3 flex items-center gap-2">
 						<MessageSquare size={20} />
 						Live Chat
 					</h3>
-					<p className="text-primary-100 mb-6 text-sm">
+					<p className="text-emerald-100 mb-6 text-sm">
 						Need immediate assistance? Start a live chat with one of our
 						available agents.
 					</p>
-					<button className="w-full py-3 bg-white text-primary-900 font-bold rounded-xl hover:bg-primary-50 transition-colors">
+					<button className="w-full py-3 bg-white text-emerald-900 font-bold rounded-xl hover:bg-emerald-50 transition-colors">
 						Start Chat
 					</button>
 				</div>
