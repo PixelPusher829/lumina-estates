@@ -1,19 +1,21 @@
 import type React from "react";
+import officeImg from "@/shared/images/about/office.webp";
+import teamImg from "@/shared/images/about/team.webp";
 
 const ImageGrid: React.FC = () => {
 	return (
 		<div className="container mx-auto px-6 mb-24">
-			<div className="grid grid-cols-1 md:grid-cols-3 gap-6 h-[500px] md:h-[600px]">
+			<div className="grid grid-cols-1 md:grid-cols-3 gap-6 h-500px md:h-600px">
 				<div className="md:col-span-2 h-full">
 					<img
-						src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&q=80&w=1200"
+						src={teamImg}
 						alt="Team meeting"
 						className="w-full h-full object-cover rounded-3xl"
 					/>
 				</div>
 				<div className="flex flex-col gap-6 h-full">
 					<img
-						src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&q=80&w=600"
+						src={officeImg}
 						alt="Office details"
 						className="w-full h-1/2 object-cover rounded-3xl"
 					/>

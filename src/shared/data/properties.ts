@@ -1,29 +1,6 @@
-"/images/properties/skyper-pool-apartment/skyper-pool-apartment-1.webp"
-
+"/images/properties/skyper-pool-apartment/skyper-pool-apartment-1.webp";
 
 export const YAML_DATA_SOURCE = `
-- id: "prop_001"
-  title: "Skyper Pool Apartment"
-  description: "Experience luxury living in the heart of the city. This stunning apartment features floor-to-ceiling windows, a private infinity pool, and smart home integration. The open-plan living area is perfect for entertaining, while the master suite offers a sanctuary of calm."
-  price: 1450000
-  currency: "$"
-  address: "124 Cloud Avenue, Downtown"
-  city: "Metropolis"
-  type: "Apartment"
-  specs:
-    beds: 3
-    baths: 2
-    sqft: 1850
-  tags: ["Pool", "Smart Home", "View"]
-  agent: "Sarah Jenkins"
-  images:
-    - "/images/properties/skyper-pool-apartment/featured-1.webp"
-    - "/images/properties/skyper-pool-apartment/featured-2.webp"
-    - "/images/properties/skyper-pool-apartment/featured-3.webp"
-    - "/images/properties/skyper-pool-apartment/featured-4.webp"
-    - "/images/properties/skyper-pool-apartment/featured-5.webp"
-  isNew: true
-
 - id: "prop_002"
   title: "Cedar Residence"
   description: "A harmonious blend of nature and modern architecture. This cedar-clad residence sits on a wooded lot, offering privacy and tranquility. Features include a chef's kitchen, radiant floor heating, and a spacious outdoor deck."
@@ -90,6 +67,29 @@ export const YAML_DATA_SOURCE = `
     - "/images/properties/modern-glass-penthouse/featured-4.webp"
     - "/images/properties/modern-glass-penthouse/featured-5.webp"
     - "/images/properties/modern-glass-penthouse/featured-6.webp"
+
+- id: "prop_001"
+  title: "Skyper Pool Apartment"
+  description: "Experience luxury living in the heart of the city. This stunning apartment features floor-to-ceiling windows, a private infinity pool, and smart home integration. The open-plan living area is perfect for entertaining, while the master suite offers a sanctuary of calm."
+  price: 1450000
+  currency: "$"
+  address: "124 Cloud Avenue, Downtown"
+  city: "Metropolis"
+  type: "Apartment"
+  specs:
+    beds: 3
+    baths: 2
+    sqft: 1850
+  tags: ["Pool", "Smart Home", "View"]
+  agent: "Sarah Jenkins"
+  images:
+    - "/images/properties/skyper-pool-apartment/featured-1.webp"
+    - "/images/properties/skyper-pool-apartment/featured-2.webp"
+    - "/images/properties/skyper-pool-apartment/featured-3.webp"
+    - "/images/properties/skyper-pool-apartment/featured-4.webp"
+    - "/images/properties/skyper-pool-apartment/featured-5.webp"
+  isNew: true
+
 
 - id: "prop_005"
   title: "Suburban Family Haven"

@@ -15,6 +15,7 @@ import {
 } from "@/pages";
 import Navbar from "@/shared/layout/Navbar";
 import Footer from "@/shared/layout/Footer";
+import ScrollToTop from "@/shared/utils/ScrollToTop";
 
 const App: React.FC = () => {
 	// Favorites State Logic
@@ -35,6 +36,7 @@ const App: React.FC = () => {
 
 	return (
 		<div className="flex flex-col min-h-screen">
+			<ScrollToTop />
 			<Navbar favoritesCount={favorites.length} />
 
 			<main className="flex-grow">
