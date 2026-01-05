@@ -1,7 +1,7 @@
+import { ArrowUpRight, Bath, Bed, Heart, MapPin, Move } from "lucide-react";
 import type React from "react";
 import { Link } from "react-router";
-import { Heart, MapPin, Bed, Bath, Move, ArrowUpRight } from "lucide-react";
-import type { Property } from "@/shared/types";
+import type { Property } from "@/shared/types/types";
 
 interface PropertyCardProps {
 	property: Property;
@@ -31,7 +31,7 @@ const PropertyCard: React.FC<PropertyCardProps> = ({
 					{/* Badges */}
 					<div className="absolute top-4 left-4 flex gap-2">
 						{property.isNew && (
-							<span className="px-3 py-1 bg-primary-600 text-white text-xs font-bold uppercase tracking-wider rounded-full shadow-lg">
+							<span className="px-3 py-1 bg-emerald-500 text-white text-xs font-bold uppercase tracking-wider rounded-full shadow-lg">
 								New
 							</span>
 						)}
@@ -43,6 +43,8 @@ const PropertyCard: React.FC<PropertyCardProps> = ({
 					{/* Favorite Button */}
 					<button
 						onClick={(e) => onToggleFavorite(e, property.id)}
+						type="button"
+						title="Toggle Favorite"
 						className={`absolute top-4 right-4 p-2.5 rounded-full backdrop-blur-md transition-all duration-300 ${
 							isFavorite
 								? "bg-rose-500 text-white shadow-lg shadow-rose-500/30"
@@ -62,14 +64,14 @@ const PropertyCard: React.FC<PropertyCardProps> = ({
 				</div>
 
 				{/* Content */}
-				<div className="p-6 flex flex-col flex-grow">
+				<div className="p-6 flex flex-col grow">
 					<div className="flex items-start justify-between mb-2">
-						<h3 className="text-lg font-bold text-slate-900 group-hover:text-primary-700 transition-colors line-clamp-1">
+						<h3 className="text-lg font-bold text-slate-900 group-hover:text-primary-700 transition-colors line-clamp-1 trans">
 							{property.title}
 						</h3>
 						<ArrowUpRight
 							size={20}
-							className="text-slate-300 group-hover:text-primary-600 transition-colors"
+							className="text-slate-300 group-hover:text-primary-500 transition-colors"
 						/>
 					</div>
 
@@ -86,8 +88,8 @@ const PropertyCard: React.FC<PropertyCardProps> = ({
 					{/* Specs */}
 					<div className="flex items-center justify-between text-slate-600 mt-auto">
 						<div className="flex items-center gap-2">
-							<div className="p-1.5 bg-slate-50 rounded-lg text-primary-600">
-								<Bed size={16} />
+							<div className="p-1.5 bg-emerald-50 rounded-lg text-emerald-500">
+								<Bed size={18} />
 							</div>
 							<span className="text-sm font-semibold">
 								{property.specs.beds}{" "}
@@ -95,8 +97,8 @@ const PropertyCard: React.FC<PropertyCardProps> = ({
 							</span>
 						</div>
 						<div className="flex items-center gap-2">
-							<div className="p-1.5 bg-slate-50 rounded-lg text-primary-600">
-								<Bath size={16} />
+							<div className="p-1.5 bg-emerald-50 rounded-lg text-emerald-500">
+								<Bath size={18} />
 							</div>
 							<span className="text-sm font-semibold">
 								{property.specs.baths}{" "}
@@ -106,8 +108,8 @@ const PropertyCard: React.FC<PropertyCardProps> = ({
 							</span>
 						</div>
 						<div className="flex items-center gap-2">
-							<div className="p-1.5 bg-slate-50 rounded-lg text-primary-600">
-								<Move size={16} />
+							<div className="p-1.5 bg-emerald-50 rounded-lg text-emerald-500">
+								<Move size={18} />
 							</div>
 							<span className="text-sm font-semibold">
 								{property.specs.sqft}{" "}

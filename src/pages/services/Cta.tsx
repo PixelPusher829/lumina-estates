@@ -1,15 +1,11 @@
 import type React from "react";
-import ctaImg from "@/shared/images/services/cta.webp";
 import { Link } from "react-router";
 
 const Cta: React.FC = () => {
 	return (
 		<section className="py-32 relative overflow-hidden z-20">
 			<div className="absolute inset-0 bg-slate-900"></div>
-			<div
-				className="absolute inset-0 bg-cover bg-center opacity-10"
-				style={{ backgroundImage: `url(${ctaImg})` }}
-			></div>
+			<div className="absolute inset-0 bg-cover bg-center opacity-10 bg-[url(/images/cta/cta-services.webp)]"></div>
 
 			<div className="container mx-auto px-6 relative z-10 text-center">
 				<h2 className="text-4xl md:text-6xl font-bold text-white mb-8 tracking-tight">
