@@ -1,5 +1,5 @@
+import { Award, Target, TrendingUp, Users } from "lucide-react";
 import type React from "react";
-import { Target, Users, Award, TrendingUp } from "lucide-react";
 
 const Mission: React.FC = () => {
 	return (

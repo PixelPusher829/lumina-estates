@@ -1,7 +1,7 @@
+import { Mail, MapPin, Phone } from "lucide-react";
 import type React from "react";
-import { Phone, Mail, MapPin } from "lucide-react";
-import { AGENTS as agents } from "@/shared/data/agents";
 import { Link } from "react-router";
+import { AGENTS as agents } from "@/shared/data/agents";
 
 const AgentsSection: React.FC = () => {
 	return (
@@ -17,9 +17,9 @@ const AgentsSection: React.FC = () => {
 			</div>
 
 			<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-				{agents.map((agent, idx) => (
+				{agents.map((agent) => (
 					<div
-						key={idx}
+						key={agent.name}
 						className="bg-white rounded-3xl overflow-hidden border border-slate-100 shadow-sm hover:shadow-xl transition-all duration-300 group"
 					>
 						<div className="aspect-square overflow-hidden relative">
@@ -28,7 +28,7 @@ const AgentsSection: React.FC = () => {
 								alt={agent.name}
 								className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
 							/>
-							<div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex flex-col justify-end p-6">
+							<div className="absolute inset-0 bg-linear-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex flex-col justify-end p-6">
 								<Link
 									to="/contact"
 									className="w-full py-3 bg-white text-slate-900 font-bold rounded-xl text-center hover:bg-slate-100 transition-colors"

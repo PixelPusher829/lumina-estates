@@ -1,7 +1,7 @@
+import { Search } from "lucide-react";
 import type React from "react";
 import PropertyCard from "@/shared/layout/PropertyCard";
 import type { Property } from "@/shared/types/types";
-import { Search } from "lucide-react";
 
 interface FeaturedPropertyListProps {
 	filteredProperties: Property[];
@@ -53,6 +53,7 @@ const FeaturedPropertyList: React.FC<FeaturedPropertyListProps> = ({
 						Try adjusting your search criteria or filters.
 					</p>
 					<button
+						type="button"
 						onClick={onClearFilters}
 						className="mt-6 text-primary-600 font-medium hover:text-primary-700 underline"
 					>
