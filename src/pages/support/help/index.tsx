@@ -1,8 +1,8 @@
 import type React from "react";
-import SearchHeader from "./SearchHeader";
 import CategoriesGrid from "./CategoriesGrid";
-import PopularArticles from "./PopularArticles";
 import ContactCta from "./ContactCta";
+import PopularArticles from "./PopularArticles";
+import SearchHeader from "./SearchHeader";
 
 const Help: React.FC = () => {
 	return (

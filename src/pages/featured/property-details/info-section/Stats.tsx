@@ -1,6 +1,6 @@
+import { Bath, Bed, Move } from "lucide-react";
 import type React from "react";
 import type { Property } from "@/shared/types/types";
-import { Bed, Bath, Move } from "lucide-react";
 
 interface PropertyStatsProps {
 	property: Property;

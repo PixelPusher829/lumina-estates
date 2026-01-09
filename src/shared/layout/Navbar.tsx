@@ -1,7 +1,7 @@
+import { Heart, Menu, Phone, X } from "lucide-react";
 import type React from "react";
-import { useState, useEffect } from "react";
+import { useEffect, useState } from "react";
 import { Link, useLocation } from "react-router";
-import { Heart, Menu, X, Phone } from "lucide-react";
 import { APP_NAME } from "@/shared/data/constants";
 import Logo from "./Logo";
 
@@ -84,6 +84,7 @@ const Navbar: React.FC<NavbarProps> = ({ favoritesCount }) => {
 								? "text-slate-600 hover:text-rose-500"
 								: "text-white/80 hover:text-rose-500"
 						}`}
+						type="button"
 					>
 						<Heart size={24} />
 						{favoritesCount > 0 && (
@@ -102,6 +103,7 @@ const Navbar: React.FC<NavbarProps> = ({ favoritesCount }) => {
 							: "text-white lg:text-white"
 					}`}
 					onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+					type="button"
 				>
 					{mobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
 				</button>

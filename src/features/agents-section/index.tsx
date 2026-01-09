@@ -1,6 +1,6 @@
 import type React from "react";
-import AgentsHeader from "./AgentsHeader";
 import AgentGrid from "./AgentGrid";
+import AgentsHeader from "./AgentsHeader";
 
 const AgentsSection: React.FC = () => {
 	return (

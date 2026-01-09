@@ -1,7 +1,7 @@
 import type React from "react";
 import LegalHeader from "./LegalHeader";
-import TermsOfService from "./TermsOfService";
 import PrivacyPolicy from "./PrivacyPolicy";
+import TermsOfService from "./TermsOfService";
 
 const Legal: React.FC = () => {
 	return (

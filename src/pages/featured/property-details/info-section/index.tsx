@@ -1,10 +1,10 @@
 import type React from "react";
 import type { Property } from "@/shared/types/types";
 import Header from "../Header";
-import Stats from "./Stats";
-import Description from "./Description";
 import Amenities from "./Amenities";
+import Description from "./Description";
 import Highlights from "./Highlights";
+import Stats from "./Stats";
 
 interface InfoSectionProps {
 	property: Property;

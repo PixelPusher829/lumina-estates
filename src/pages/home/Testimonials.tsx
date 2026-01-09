@@ -1,6 +1,6 @@
+import { Quote } from "lucide-react";
 import type React from "react";
 import { Link } from "react-router";
-import { Quote } from "lucide-react";
 import { TESTIMONIALS } from "@/shared/data/testimonials"; // Adjusted path
 
 const Testimonials: React.FC = () => {
@@ -29,9 +29,9 @@ const Testimonials: React.FC = () => {
 					</div>
 
 					<div className="md:w-2/3 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-						{TESTIMONIALS.map((t, idx) => (
+						{TESTIMONIALS.map((t) => (
 							<div
-								key={idx}
+								key={t.name}
 								className="bg-white p-6 rounded-3xl shadow-sm border border-slate-100 hover:shadow-md transition-shadow"
 							>
 								<div className="text-primary-300 mb-4">

@@ -1,20 +1,20 @@
 import type React from "react";
-import { useState, useEffect } from "react";
-import { Routes, Route } from "react-router";
+import { useEffect, useState } from "react";
+import { Route, Routes } from "react-router";
 import {
-	Home,
-	PropertyDetails,
-	Featured,
-	Services,
-	Contact,
 	About,
-	Legal,
-	Help,
-	FAQ,
 	Agents,
+	Contact,
+	FAQ,
+	Featured,
+	Help,
+	Home,
+	Legal,
+	PropertyDetails,
+	Services,
 } from "@/pages";
-import Navbar from "@/shared/layout/Navbar";
 import Footer from "@/shared/layout/Footer";
+import Navbar from "@/shared/layout/Navbar";
 import ScrollToTop from "@/shared/utils/ScrollToTop";
 
 const App: React.FC = () => {
@@ -39,7 +39,7 @@ const App: React.FC = () => {
 			<ScrollToTop />
 			<Navbar favoritesCount={favorites.length} />
 
-			<main className="flex-grow">
+			<main className="grow">
 				<Routes>
 					<Route
 						path="/"

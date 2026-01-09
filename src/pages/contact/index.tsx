@@ -1,7 +1,7 @@
 import type React from "react";
+import Form from "./Form";
 import Header from "./Header";
 import Info from "./Info";
-import Form from "./Form";
 
 const Contact: React.FC = () => {
 	return (

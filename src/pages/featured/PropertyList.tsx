@@ -37,7 +37,7 @@ const FeaturedPropertyList: React.FC<FeaturedPropertyListProps> = ({
 							key={prop.id}
 							property={prop}
 							isFavorite={favorites.includes(prop.id)}
-							onToggleFavorite={onToggleFavorite}
+							onToggleFavorite={() => onToggleFavorite(prop.id)}
 						/>
 					))}
 				</div>

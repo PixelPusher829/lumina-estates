@@ -1,8 +1,8 @@
 import type React from "react";
+import Agents from "@/features/agents-section";
 import Hero from "./Hero";
 import ImageGrid from "./ImageGrid";
 import Mission from "./Mission";
-import Agents from "@/features/agents-section";
 
 const About: React.FC = () => {
 	return (

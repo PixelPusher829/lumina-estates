@@ -1,5 +1,5 @@
-import type React from "react";
 import { ArrowRight } from "lucide-react";
+import type React from "react";
 
 const PopularArticles: React.FC = () => {
 	return (
@@ -13,9 +13,9 @@ const PopularArticles: React.FC = () => {
 					"What documents do I need for a mortgage pre-approval?",
 					"Can I list my property if it needs renovations?",
 					"Understanding closing costs and fees.",
-				].map((article, idx) => (
+				].map((article) => (
 					<div
-						key={idx}
+						key={article}
 						className="p-6 hover:bg-slate-50 transition-colors flex items-center justify-between group cursor-pointer"
 					>
 						<span className="text-slate-700 font-medium group-hover:text-primary-700 transition-colors">

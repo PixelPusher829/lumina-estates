@@ -3,10 +3,9 @@ import { useEffect, useState } from "react";
 import { useParams } from "react-router";
 import { propertyService } from "@/shared/services/propertyService";
 import type { Property } from "@/shared/types/types";
-
-import NavHeader from "./NavHeader";
 import Gallery from "./Gallery";
 import InfoSection from "./info-section";
+import NavHeader from "./NavHeader";
 import Sidebar from "./sidebar";
 
 interface PropertyDetailsProps {

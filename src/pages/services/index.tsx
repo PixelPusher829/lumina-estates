@@ -1,9 +1,9 @@
 import type React from "react";
+import Cta from "./Cta";
 import Hero from "./Hero";
-import Residential from "./Residential";
 import Investment from "./Investment";
 import PropertyManagement from "./PropertyManagement";
-import Cta from "./Cta";
+import Residential from "./Residential";
 
 const Services: React.FC = () => {
 	return (

@@ -1,6 +1,6 @@
-import type { Property } from "@/shared/types/types";
-import { YAML_DATA_SOURCE } from "@/shared/data/properties";
 import yaml from "js-yaml";
+import { YAML_DATA_SOURCE } from "@/shared/data/properties";
+import type { Property } from "@/shared/types/types";
 
 // In a real app, this would fetch from an API endpoint serving the YAML file.
 // We are simulating the API delay and parsing here.

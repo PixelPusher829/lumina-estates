@@ -1,6 +1,6 @@
+import { MapPin } from "lucide-react";
 import type React from "react";
 import type { Property } from "@/shared/types/types";
-import { MapPin } from "lucide-react";
 
 interface PropertyHeaderProps {
 	property: Property;

@@ -1,11 +1,11 @@
+import { ArrowRight } from "lucide-react";
 import type React from "react";
 import {
-	Facebook,
-	Twitter,
-	Instagram,
-	Linkedin,
-	ArrowRight,
-} from "lucide-react";
+	FaFacebookF,
+	FaInstagram,
+	FaLinkedinIn,
+	FaTwitter,
+} from "react-icons/fa";
 import { Link } from "react-router";
 import { APP_NAME } from "@/shared/data/constants";
 import Logo from "./Logo";
@@ -31,28 +31,32 @@ const Footer: React.FC = () => {
 						</p>
 						<div className="flex gap-4">
 							<a
-								href="#"
+								href="/"
 								className="p-2 bg-slate-800 rounded-full hover:bg-primary-600 text-slate-400 hover:text-white transition-all"
+								title="Facebook"
 							>
-								<Facebook size={18} />
+								<FaFacebookF size={18} />
 							</a>
 							<a
-								href="#"
+								href="/"
 								className="p-2 bg-slate-800 rounded-full hover:bg-primary-600 text-slate-400 hover:text-white transition-all"
+								title="Twitter"
 							>
-								<Twitter size={18} />
+								<FaTwitter size={18} />
 							</a>
 							<a
-								href="#"
+								href="/"
 								className="p-2 bg-slate-800 rounded-full hover:bg-primary-600 text-slate-400 hover:text-white transition-all"
+								title="Instagram"
 							>
-								<Instagram size={18} />
+								<FaInstagram size={18} />
 							</a>
 							<a
-								href="#"
+								href="/"
 								className="p-2 bg-slate-800 rounded-full hover:bg-primary-600 text-slate-400 hover:text-white transition-all"
+								title="LinkedIn"
 							>
-								<Linkedin size={18} />
+								<FaLinkedinIn size={18} />
 							</a>
 						</div>
 					</div>
@@ -147,7 +151,11 @@ const Footer: React.FC = () => {
 								placeholder="Email address"
 								className="w-full bg-slate-800/50 border border-slate-700 rounded-xl px-4 py-3 text-white placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-all"
 							/>
-							<button className="absolute right-1.5 top-1.5 bottom-1.5 bg-primary-600 hover:bg-primary-500 text-white px-3 rounded-lg transition-colors flex items-center justify-center">
+							<button
+								className="absolute right-1.5 top-1.5 bottom-1.5 bg-primary-600 hover:bg-primary-500 text-white px-3 rounded-lg transition-colors flex items-center justify-center"
+								type="submit"
+								title="Subscribe"
+							>
 								<ArrowRight size={18} />
 							</button>
 						</div>

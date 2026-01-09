@@ -1,7 +1,7 @@
 import type React from "react";
 import type { Property } from "@/shared/types/types";
-import PricingCard from "./PricingCard";
 import AgentCard from "./AgentCard";
+import PricingCard from "./PricingCard";
 
 interface SidebarProps {
 	property: Property;

@@ -2,7 +2,6 @@ import profile1 from "@/shared/images/testimonials/profile-1.webp";
 import profile2 from "@/shared/images/testimonials/profile-2.webp";
 import profile3 from "@/shared/images/testimonials/profile-3.webp";
 
-
 export const TESTIMONIALS = [
 	{
 		name: "Marcus Thorne",

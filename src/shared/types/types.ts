@@ -20,7 +20,7 @@ export interface Property {
 	type: "Apartment" | "Villa" | "Penthouse" | "Studio";
 	tags: string[];
 	images: string[];
-	agent: Agent;
+	agent: string;
 	isNew?: boolean;
 }
 

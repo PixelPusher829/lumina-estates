@@ -1,11 +1,10 @@
 import type React from "react";
 import { useEffect, useState } from "react";
+import { useSearchParams } from "react-router";
 import { propertyService } from "@/shared/services/propertyService";
 import type { Property } from "@/shared/types/types";
-import { useSearchParams } from "react-router";
-
-import Header from "./Header";
 import Filters from "./Filters";
+import Header from "./Header";
 import PropertyList from "./PropertyList";
 
 interface FeaturedProps {

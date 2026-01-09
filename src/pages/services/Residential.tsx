@@ -1,5 +1,5 @@
-import type React from "react";
 import { Home } from "lucide-react";
+import type React from "react";
 import residential1 from "@/shared/images/services/residential-1.webp";
 import residential2 from "@/shared/images/services/residential-2.webp";
 

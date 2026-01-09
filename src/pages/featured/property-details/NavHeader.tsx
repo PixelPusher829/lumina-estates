@@ -1,6 +1,6 @@
+import { ArrowLeft, Heart, Share2 } from "lucide-react";
 import type React from "react";
 import { Link } from "react-router";
-import { ArrowLeft, Share2, Heart } from "lucide-react";
 
 interface NavHeaderProps {
 	propertyId: string;
@@ -24,7 +24,11 @@ const NavHeader: React.FC<NavHeaderProps> = ({
 				<span className="sm:hidden">Back</span>
 			</Link>
 			<div className="flex gap-3">
-				<button className="p-2.5 rounded-full border border-slate-200 text-slate-600 hover:bg-slate-50 transition-colors">
+				<button
+					className="p-2.5 rounded-full border border-slate-200 text-slate-600 hover:bg-slate-50 transition-colors"
+					type="button"
+					title="Share"
+				>
 					<Share2 size={18} />
 				</button>
 				<button
@@ -34,6 +38,8 @@ const NavHeader: React.FC<NavHeaderProps> = ({
 							? "bg-rose-50 border-rose-200 text-rose-500"
 							: "bg-white border-slate-200 text-slate-600 hover:border-rose-200 hover:text-rose-500"
 					}`}
+					type="button"
+					title={isFavorite ? "Remove from Favorites" : "Add to Favorites"}
 				>
 					<Heart size={18} fill={isFavorite ? "currentColor" : "none"} />
 				</button>

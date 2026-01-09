@@ -1,5 +1,5 @@
+import { Mail, MapPin, MessageSquare, Phone } from "lucide-react";
 import type React from "react";
-import { Mail, Phone, MapPin, MessageSquare } from "lucide-react";
 
 const ContactInfo: React.FC = () => {
 	return (
@@ -63,7 +63,8 @@ const ContactInfo: React.FC = () => {
 						Need immediate assistance? Start a live chat with one of our
 						available agents.
 					</p>
-					<button className="w-full py-3 bg-white text-emerald-900 font-bold rounded-xl hover:bg-emerald-50 transition-colors">
+					<button className="w-full py-3 bg-white text-emerald-900 font-bold rounded-xl hover:bg-emerald-50 transition-colors"
+						type="button">
 						Start Chat
 					</button>
 				</div>

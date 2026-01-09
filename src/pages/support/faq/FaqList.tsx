@@ -1,6 +1,6 @@
+import { ChevronDown, ChevronUp } from "lucide-react";
 import type React from "react";
 import { useState } from "react";
-import { ChevronDown, ChevronUp } from "lucide-react";
 
 const FaqList: React.FC = () => {
 	const [openIndex, setOpenIndex] = useState<number | null>(0);
@@ -46,7 +46,7 @@ const FaqList: React.FC = () => {
 		<div className="space-y-4">
 			{faqs.map((faq, index) => (
 				<div
-					key={index}
+					key={faq.question}
 					className={`bg-white rounded-2xl border transition-all duration-300 ${
 						openIndex === index
 							? "border-primary-200 shadow-md ring-1 ring-primary-100"
@@ -56,6 +56,7 @@ const FaqList: React.FC = () => {
 					<button
 						className="w-full flex items-center justify-between p-6 text-left focus:outline-none"
 						onClick={() => toggleFAQ(index)}
+						type="button"
 					>
 						<span
 							className={`text-lg font-bold ${openIndex === index ? "text-primary-700" : "text-slate-800"}`}

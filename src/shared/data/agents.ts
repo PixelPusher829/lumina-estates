@@ -1,9 +1,9 @@
-import davidImg from "@/shared/images/agents/david-sterling.webp";
 import alexImg from "@/shared/images/agents/alex-rivera.webp";
-import sarahImg from "@/shared/images/agents/sarah-jenkins.webp";
+import davidImg from "@/shared/images/agents/david-sterling.webp";
 import jessicaImg from "@/shared/images/agents/jessica-alba.webp";
 import karenImg from "@/shared/images/agents/karen-miller.webp";
 import michaelImg from "@/shared/images/agents/michael-chen.webp";
+import sarahImg from "@/shared/images/agents/sarah-jenkins.webp";
 
 export interface Agent {
 	name: string;

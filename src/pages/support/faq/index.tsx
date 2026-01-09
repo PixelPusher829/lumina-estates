@@ -1,7 +1,7 @@
 import type React from "react";
-import Header from "./Header";
-import FaqList from "./FaqList";
 import Cta from "./Cta";
+import FaqList from "./FaqList";
+import Header from "./Header";
 
 const FAQ: React.FC = () => {
 	return (

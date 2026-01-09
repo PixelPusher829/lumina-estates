@@ -1,6 +1,6 @@
+import { CheckCircle2 } from "lucide-react";
 import type React from "react";
 import type { Property } from "@/shared/types/types";
-import { CheckCircle2 } from "lucide-react";
 
 interface PropertyAmenitiesProps {
 	property: Property;
@@ -15,7 +15,7 @@ const PropertyAmenities: React.FC<PropertyAmenitiesProps> = ({ property }) => {
 					<div key={tag} className="flex items-center gap-3">
 						<CheckCircle2
 							size={20}
-							className="text-emerald-500 flex-shrink-0"
+							className="text-emerald-500 shrink-0"
 						/>
 						<span className="text-slate-700 font-medium">{tag}</span>
 					</div>

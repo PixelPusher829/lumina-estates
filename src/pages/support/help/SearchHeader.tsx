@@ -1,5 +1,5 @@
-import type React from "react";
 import { Search } from "lucide-react";
+import type React from "react";
 
 const SearchHeader: React.FC = () => {
 	return (

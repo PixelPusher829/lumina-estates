@@ -1,11 +1,11 @@
-import type React from "react";
 import {
-	Home,
-	FileText,
-	UserCheck,
-	ShieldQuestion,
 	ArrowRight,
+	FileText,
+	Home,
+	ShieldQuestion,
+	UserCheck,
 } from "lucide-react";
+import type React from "react";
 import { Link } from "react-router";
 
 const CategoriesGrid: React.FC = () => {
@@ -38,9 +38,9 @@ const CategoriesGrid: React.FC = () => {
 
 	return (
 		<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 -mt-20 mb-16 relative z-10">
-			{categories.map((cat, idx) => (
+			{categories.map((cat) => (
 				<div
-					key={idx}
+					key={cat.title}
 					className="bg-white p-8 rounded-3xl shadow-lg border border-slate-100 hover:-translate-y-1 transition-transform duration-300"
 				>
 					<div className="w-12 h-12 bg-primary-50 rounded-2xl flex items-center justify-center text-primary-600 mb-6">

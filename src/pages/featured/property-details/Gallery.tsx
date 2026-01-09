@@ -72,11 +72,16 @@ const Gallery: React.FC<GalleryProps> = ({ property }) => {
 
 			{/* Side Thumbnails Container */}
 			<div className="hidden lg:flex flex-col gap-4 h-full w-full overflow-y-auto">
-				{sideImages.map((img, idx) => (
-					<div
-						key={idx}
-						className="relative flex-1 rounded-2xl overflow-hidden cursor-pointer group"
+				{sideImages.map((img) => (
+					<button
+						key={img.index}
+						type="button"
+						className="relative flex-1 rounded-2xl overflow-hidden group focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
 						onClick={() => setActiveImage(img.index)}
+						onKeyDown={(e) => {
+							if (e.key === "Enter" || e.key === " ") setActiveImage(img.index);
+						}}
+						title={`View image ${img.index + 1}`}
 					>
 						<img
 							src={img.src}
@@ -86,14 +91,14 @@ const Gallery: React.FC<GalleryProps> = ({ property }) => {
 						<div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors"></div>
 
 						{/* View All Overlay on last item (optional visual cue) */}
-						{idx === 2 && (
+						{img.index === 2 && (
 							<div className="absolute inset-0 flex items-center justify-center pointer-events-none">
 								<div className="px-4 py-2 bg-white/90 backdrop-blur-sm rounded-lg text-sm font-semibold shadow-sm opacity-0 group-hover:opacity-100 transition-all translate-y-2 group-hover:translate-y-0">
 									View Gallery
 								</div>
 							</div>
 						)}
-					</div>
+					</button>
 				))}
 			</div>
 		</div>

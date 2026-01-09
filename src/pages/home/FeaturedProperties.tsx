@@ -1,16 +1,16 @@
 import type React from "react";
 import { useEffect, useState } from "react";
 import { Link } from "react-router";
-import PropertyCard from "@/shared/layout/PropertyCard"; 
-import { propertyService } from "@/shared/services/propertyService"; 
-import type { Property } from "@/shared/types/types"; 
+import PropertyCard from "@/shared/layout/PropertyCard";
+import { propertyService } from "@/shared/services/propertyService";
+import type { Property } from "@/shared/types/types";
 
-// interface FeaturedPropertiesSectionProps {
-// 	favorites: string[];
-// 	onToggleFavorite: (id: string) => void;
-// }
+interface FeaturedPropertiesSectionProps {
+	favorites: string[];
+	onToggleFavorite: (id: string) => void;
+}
 
-const FeaturedProperties: React.FC = ({ favorites, onToggleFavorite }) => {
+const FeaturedProperties: React.FC<FeaturedPropertiesSectionProps> = ({ favorites, onToggleFavorite }) => {
 	const [properties, setProperties] = useState<Property[]>([]);
 	const [loading, setLoading] = useState(true);
 

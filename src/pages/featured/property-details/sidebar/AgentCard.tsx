@@ -1,7 +1,7 @@
 import type React from "react";
-import type { Property } from "@/shared/types/types";
 import { Link } from "react-router";
 import { AGENTS as agentData } from "@/shared/data/agents";
+import type { Property } from "@/shared/types/types";
 
 interface AgentCardProps {
 	property: Property;

@@ -1,11 +1,11 @@
 @import "tailwindcss";
 
-:root{
+:root {
 	--source-primary-50: #eef2ff;
 	--source-primary-100: #e0e7ff;
 	--source-primary-500: #6366f1;
 	--source-primary-600: #4f46e5;
-	--source-primary-700: #4338ca; 
+	--source-primary-700: #4338ca;
 	--source-primary-900: #312e81;
 	--source-secondary: #64748b;
 	--source-logo: #07da9a;
@@ -20,7 +20,6 @@
 	--source-secondary: #64748b;
 	--source-logo: hsl(162, 94%, 44%);
 } */
-
 
 @theme {
 	--font-sans: "Plus Jakarta Sans", sans-serif;

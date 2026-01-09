@@ -1,5 +1,5 @@
-import type React from "react";
 import { Search, SlidersHorizontal, X } from "lucide-react";
+import type React from "react";
 
 interface FeaturedFiltersProps {
 	searchTerm: string;
@@ -15,7 +15,6 @@ const FeaturedFilters: React.FC<FeaturedFiltersProps> = ({
 	setSearchTerm,
 	filterType,
 	setFilterType,
-	clearFilters,
 	propertyTypes,
 }) => {
 	const handleSearchChange = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -44,6 +43,8 @@ const FeaturedFilters: React.FC<FeaturedFiltersProps> = ({
 								setSearchTerm("");
 							}}
 							className="absolute right-3 top-1/2 -translate-y-1/2 text-slate-400 hover:text-slate-600 p-1"
+							type="button"
+							title="close"
 						>
 							<X size={16} />
 						</button>
@@ -67,6 +68,7 @@ const FeaturedFilters: React.FC<FeaturedFiltersProps> = ({
 									? "bg-primary-600 text-white"
 									: "bg-slate-50 text-slate-600 hover:bg-slate-100"
 							}`}
+							type="button"
 						>
 							{type}
 						</button>

@@ -1,10 +1,10 @@
-import type React from "react";
 import {
-	ShieldCheck,
-	Zap,
 	HeartHandshake,
 	Home as HomeIcon,
+	ShieldCheck,
+	Zap,
 } from "lucide-react";
+import type React from "react";
 
 const Services: React.FC = () => {
 	return (
@@ -42,9 +42,9 @@ const Services: React.FC = () => {
 							title: "Quality Homes",
 							desc: "Every listing is verified for quality and accuracy.",
 						},
-					].map((service, idx) => (
+					].map((service) => (
 						<div
-							key={idx}
+							key={service.title}
 							className="p-8 rounded-3xl bg-slate-50 hover:bg-white border border-slate-100 hover:shadow-xl transition-all duration-300 group"
 						>
 							<div className="w-14 h-14 bg-white rounded-2xl flex items-center justify-center text-emerald-400 mb-6 shadow-sm group-hover:bg-emerald-400 group-hover:text-white transition-colors">

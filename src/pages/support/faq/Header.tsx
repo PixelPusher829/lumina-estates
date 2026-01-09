@@ -1,5 +1,5 @@
-import type React from "react";
 import { HelpCircle } from "lucide-react";
+import type React from "react";
 
 const FaqHeader: React.FC = () => {
 	return (
